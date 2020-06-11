@@ -12,7 +12,7 @@ deploy:
     file: dist/*
     skip_cleanup: true
     on:
-        repo: DPDK
+        repo: scannme/DPDK
         tags: true
         branch: master 
 
