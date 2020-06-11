@@ -13,6 +13,5 @@ deploy:
     skip_cleanup: true
     on:
         repo: scannme/DPDK
-        tags: true
         branch: master 
 
