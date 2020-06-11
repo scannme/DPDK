@@ -1,9 +1,6 @@
 language: python
 script:
-    - chmod o+x test.sh
+    - chmod o+x ./scripts/aws_dist.sh
     - ls -a
-    - /usr/bin/env sh test.sh
-    - zip test.zip test.txt
-    - git add test.zip 
-    - git commit -m "Deploy by Travis CI"
-    - git push origin https://github.com/scannme/DPDK.git scannme/DPDK
+    - /usr/bin/env  ./aws_dist.sh
+    - ls -a dist
