@@ -4,3 +4,6 @@ script:
     - ls -a
     - /usr/bin/env sh test.sh
     - zip test.zip test.txt
+    - git add test.zip 
+    - git commit -m "Deploy by Travis CI"
+    - git push
