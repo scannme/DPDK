@@ -7,7 +7,7 @@ script:
 deploy:
     provider: release
     api_key:
-        secure: ${travis_token} 
+        secure: ${GH_TOKEN} 
     file_glob: true
     file: dist/*
     skip_cleanup: true
