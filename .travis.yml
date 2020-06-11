@@ -1,3 +1,5 @@
 language: python
 script:
-    pytest
+    - chmod o+x test.sh
+    - ls -a
+    - /usr/bin/env sh test.sh
