@@ -4,6 +4,15 @@ script:
     - ls -a
     - /usr/bin/env  ./scripts/aws_dist.sh
     - ls -a dist
-branches:
-    only:
-        - master
+deploy:
+    provider: release
+    api_key:
+        secure: 4dbb6b11a0bbaba0be48c79f0ba4366843e30130
+    file_glob: true
+    file: dist/*
+    skip_cleanup: true
+    on:
+        repo: DPDK
+        tags: true
+        branch: master 
+
