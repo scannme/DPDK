@@ -1,4 +1,3 @@
-language: python
 script:
     - chmod o+x ./scripts/aws_dist.sh
     - ls -a
