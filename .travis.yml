@@ -2,5 +2,5 @@ language: python
 script:
     - chmod o+x ./scripts/aws_dist.sh
     - ls -a
-    - /usr/bin/env  ./aws_dist.sh
+    - /usr/bin/env  ./scripts/aws_dist.sh
     - ls -a dist
