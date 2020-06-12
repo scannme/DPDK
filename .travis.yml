@@ -8,8 +8,7 @@ deploy:
     provider: releases
     api_key:
         secure: "cfXByeaiP0HqOQDj8AfjCqw9jt60bVejJHRw38USKVWl1D9ZMKfVclev8HBw\nKgAJ9yzTinBvqMFILk6u7nmjarOYFdO4GfsqiXEW1yTDpUJylbYhDIBbmw6W\nneD4iNSrUYbaief40jZTBo/aIySHoFNpHWyhLBKHCDdEdVN7JUSIe/Izt0a+\ngmS7i98jYUuvTbd8udt2t9cH5RfJEvRhE1WPHsMAPVTQxo5pUJZroDky/6RZ\ncZd1KDdk/jWlBx0On7p1MWYja+wLY/lYlN32SBWA8TL31R7tH7yB7gcb7Pqc\n+3Dmh+xLjwhWsaojZkvkWgeArI+oSVkixkV7yC6nNZS2U1NYai/9BTMzurLb\nPhuC61d74rpLxPzqD6kJc9QRYDnlZxU6IkwXTxyPIAAsiQIM8HdJHnl364yr\nFC6SvO/jwzBIC312cUF7YR0vtbf0xQjj4WlNQruSndNX5qjC+q8nvXJ/KhUu\npOsDta5dieuhc+m5Kx8TygeT4yRUdaNBho5q2/e6mMRhJY4QWAfg5lJaNrTQ\nAfEbwR66LVE/LEpVXBOjj854zNbt+Yncph1EGNdorV26eDHsJwsYzEYIJe6h\nI+k5tyoAmxdh/XJcbEffz6eDYds5n2w+47klznOBBm5hLBiYafyW01Am77Qt\n/ObtGDL7wfwMcOZBktIjgk4="
-    file_glob: true
-    file: dist/*
+    file: dist/*.zip
     skip_cleanup: true
     on:
         repo: scannme/DPDK 
