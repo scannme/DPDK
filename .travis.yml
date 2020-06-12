@@ -11,8 +11,6 @@ deploy:
     file: dist/fortiweb-ha-auto-deploy-aws.zip
     skip_cleanup: true
     on: 
-      branch:
-          only:
-              - master
-    
+      branch: master
+   
 
