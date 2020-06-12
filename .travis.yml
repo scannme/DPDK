@@ -9,7 +9,7 @@ deploy:
     api_key:
         secure: "lpek0+hkjoOCFm/Uyt4n2TjC3DO/hISDeOMQjWvX754bRp0/KgHw6FVHoYN7\nbs+u7Xnxnnz55tDFTiJ5aKMVzKDCG9laWVfby95zLQXCrC74crbFmnchGUN/\nhvRTAdJ5HjQ6l6+9/+SHE7AQHg1B4Vp8BDuZrJtNYBw5t11nQChlTa/6Tal/\nMtLW7WUOA9bK7zErUf6i9PyBZBKQ8hiT4UBdDCXRzuYs+tTJ1cgZiMf2uo1m\nMUsbkNse7wJF+QfpmR3tTYq+6SO7aJBjWZALC0Pb7vWKH/kGKrg6/UIkj4ku\nHRST8lLFjEszD2AIOhLBp/upNa8u4bn4Scgl7bMDfmyTfnvN5qhzdDF3ckK/\nQOkcRwXlNvsZf8ce/WXg2Tzrklv+faB9+gwD937Bp32eHRW1IPA3KKJXLkw9\nolNjfTIkjY44IOLGj33rCaFefimlpqmPx3egiWNcYqh0ofZJj4bL/RDQiSsZ\nNZKF0sXRs4+rzuAnrEjNvbI0fWE0xXiAeiE6C+sF5CZKlJLblgGFBdJm54a3\nN3C0rwXLXViteC6U53N9c/831EZK9Ope66ejAMdTKvMKhd+iBfKhN52pQ1Wy\n46oXey/O9hXExcsXXQ1ID5+5EP22DESk0z5fbBBnAInmAwMr3ey8gHbzPw9I\nqMCJqGRD5Lg0Df7wDm6cHDk="
     file_glob: true
-    file: dist/fortiweb-ha-auto-deploy-aws.zip
+    file: dist/*
     skip_cleanup: true
     on: 
         repo: scannme/DPDK
