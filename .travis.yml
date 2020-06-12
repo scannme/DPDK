@@ -15,5 +15,5 @@ deploy:
     skip_cleanup: true
     on:
         repo: scannme/DPDK 
-        branch: master 
+        branches: master 
 
