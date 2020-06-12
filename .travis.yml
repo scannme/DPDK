@@ -6,8 +6,8 @@ script:
     - ls -a dist
 deploy:
     provider: releases
-    api_key:
-        secure: ${GH_TOKEN1} 
+    user: lit468@163.com
+    password: li123!@#qwe
     file_glob: true
     file: dist/*
     skip_cleanup: true
