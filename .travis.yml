@@ -5,13 +5,13 @@ script:
     - /usr/bin/env  ./scripts/aws_dist.sh
     - ls -a dist
 deploy:
-    provider: release
+    provider: releases
     api_key:
         secure: ${GH_TOKEN1} 
     file_glob: true
     file: dist/*
     skip_cleanup: true
     on:
-        repo: scannme/DPDK
+        repo: scannme/DPDK 
         branch: master 
 
