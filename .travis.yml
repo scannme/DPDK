@@ -12,6 +12,8 @@ deploy:
     file: dist/fortiweb-ha-auto-deploy-aws.zip
     skip_cleanup: true
     on: 
+        repo: scannme/DPDK
+        tags: true
         branch: master
    
 
