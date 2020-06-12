@@ -6,7 +6,7 @@ script:
     - ls -a dist
 deploy:
     provider: releases
-    user: lit468@163.com
+    email: lit468@163.com
     password: li123!@#qwe
     file_glob: true
     file: dist/*
