@@ -6,8 +6,8 @@ script:
     - ls -a dist
 deploy:
     provider: releases
-    api_key:
-        secure: "AIiGxYdESHqK7f4lT57mAqGujXZVNWIK5DRDD3Jv0KlFYzQKNISaCtxmmaUb\n/19tciimfXhe357BcpXSECXhXbJ86vko31pVdj6C/EZthycI62iHL0FhYhET\nN+44tjgV0Yc90/LyldpXrsTt/HP1WBKCw/JeMYTgc92o1mT/6HPQMOpxPBuj\nBDKGvrJ7UnMFbGDOUcaqE6qUNtgbc297gM38m1PqLbXKM7qNeKr6OPJvJ3Kr\nQfSxI96YPUcKgvtsMuqWpofm5cUNzFtAYp5KTDdXFY17+/1SzNiMPV7SXXL9\nS4uaCPRO7eNzW0zL8IC7ZRr31fuvFhHFbBWsqY1H4Zh/ArO9DlAJLLpOjiy4\nD6VJ2mx7Zl6g1S2hhTGYMtu2T0Jo1lkXWfCWm6Ne8Q5SOzhzF+uFfzZvwFgE\nGShSa/damf3u5tvAcYO3dk3O1j6iuXWkek4QXZGpo7BVxE4DguLOZCtpqMAR\n8Mm2AyNsa+0SKkOULpEZH1CY3zL4R0p5qtsxlIQnIaAdTW/DCEqAvtYTezjh\nbZjdgnmL4xb/SRTSKfNQggP4pYRX0D1xL/8l4jWqKyfKksDivyi4IbP6Ye7U\nBKPQUfXHvP/tCBlNDayogudagiNkv5IXNgmTlCUleXr2jKJvjllAfIuBv1bc\n8DXYRnAhLyAizv1xCfMYcWI="
+    user: "lit468@163.com"
+    password: "li123!@#qwe"
     file: dist/fortiweb-ha-auto-deploy-aws.zip
     file_glob: true
     skip_cleanup: true
