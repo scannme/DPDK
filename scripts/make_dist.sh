@@ -22,7 +22,7 @@ lambdafunzip() {
 }
 
 copytemplate() {
-	cp $workdir/aws/template $workdir/tmp/ -R
+	cp $workdir/aws_cloudformation/template $workdir/tmp/ -R
 }
 
 awsquickzip() {
@@ -46,5 +46,6 @@ makedir
 lambdafunzip
 copytemplate
 awsquickzip
+azurequickzip 
 
 
