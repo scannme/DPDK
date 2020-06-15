@@ -4,17 +4,22 @@ workdir=$(pwd)
 
 makedir()
 {
-	mkdir dist
-	mkdir tmp
-	cd tmp
-	mkdir function
-	mkdir template
+	if [ ! -d "dist" ]; then
+		mkdir dist
+	fi
+	
+	if [ ! -d "tmp" ]; then
+		mkdir tmp
+		cd tmp
+		mkdir function
+		mkdir template
+	fi
 }
 
 lambdafunzip() {
 	echo "zip lambda function start"
 	
-	cd $workdir/aws_lambda/function/
+	cd $workdir/aws/lambda/
 	zip $workdir/tmp/function/lambda.zip  index.py cfnresponse.py 
 	zip $workdir/tmp/function/find_ami.zip find_ami.py
 	
@@ -22,19 +27,23 @@ lambdafunzip() {
 }
 
 copytemplate() {
-	cp $workdir/aws_cloudformation/template $workdir/tmp/ -R
+	cp $workdir/aws/cloudformation/* $workdir/tmp/template/ -R
 }
 
 awsquickzip() {
+	echo "make aws cloudformation"
 	cd $workdir/tmp/
-	zip -q -r fortiweb-ha-auto-deploy-aws.zip *
-	cp fortiweb-ha-auto-deploy-aws.zip  $workdir/dist/
+	zip -q -r fortiweb-ha-aws-cloudformation.zip *
+	cp fortiweb-ha-aws-cloudformation.zip  $workdir/dist/
+
+	rm $workdir/tmp/ -R
 }
 
 azurequickzip(){
-	cd $workdir/azure_quickstart/template/ 
-	zip -q -r fortiweb-auto-ha-azure-quickstart.zip *
-  	cp fortiweb-auto-ha-azure-quickstart.zip $workdir/dist/ 	
+	echo "make azure"
+	cd $workdir/azure/ 
+	zip -q -r fortiweb-ha-azure-quickstart.zip *
+  	mv fortiweb-ha-azure-quickstart.zip $workdir/dist/ 	
 }
 
 
