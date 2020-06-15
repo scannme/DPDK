@@ -33,8 +33,8 @@ awsquickzip() {
 
 azurequickzip(){
 	cd $workdir/azure_quickstart/template/ 
-	zip -q -r fortweb-auto-ha-azure-quickstart.zip *
-  	cp fortweb-auto-ha-azure-quickstart.zip $workdir/dist/ 	
+	zip -q -r fortiweb-auto-ha-azure-quickstart.zip *
+  	cp fortiweb-auto-ha-azure-quickstart.zip $workdir/dist/ 	
 }
 
 
