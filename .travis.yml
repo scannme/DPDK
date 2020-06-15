@@ -1,8 +1,8 @@
 language: shell
 script:
-    - chmod o+x ./scripts/aws_dist.sh
+    - chmod o+x ./scripts/make_dist.sh
     - ls -a
-    - /usr/bin/env  ./scripts/aws_dist.sh
+    - /usr/bin/env  ./scripts/make_dist.sh
     - ls -a dist
 deploy:
     provider: releases
