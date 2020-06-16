@@ -27,11 +27,11 @@
             }
         },        
         "resourceNamePrefix": {
-                "defaultValue": "fwbha",
-                "minLength": 3,
-                "maxLength": 48,
-                "type": "string",
-                "metadata": {
+            "defaultValue": "fwbha",
+            "minLength": 3,
+            "maxLength": 48,
+            "type": "string",
+            "metadata": {
                 "description": "Name prefix for resources which the Fortiweb HA template create."
             }
         },
@@ -46,9 +46,6 @@
             "metadata": {
                 "description": "Size of VM in the FortiWeb set VM instances"
             }
-        },
-        "imageResourceID": {
-            "type": "string"
         },
         "vmAdminUsername": {
             "minLength": 3,
@@ -101,8 +98,7 @@
                 "description":"FortiWeb image Version."
             },
             "allowedValues":[
-                "latest",
-                "6.3.2"
+                "latest"
             ]
         },
         "vmCount":{
@@ -319,7 +315,6 @@
                 }
             ]
         },
-        "imageRID": "[parameters('imageResourceID')]",
         
         "vmImageSkuMap":{
             "BYOL":"fortinet_fw-vm",
@@ -673,6 +668,7 @@
             "name": "[concat(variables('vmNamePrefix'),copyIndex(1))]",
             "apiVersion": "2018-06-01",
             "location": "[variables('location')]",
+            "plan": "[variables('vmImagePlan')]",
             "tags":{
                 "[variables('vmNamePrefix')]" : "[parameters('resourceNamePrefix')]"
             },
@@ -689,9 +685,7 @@
                     "vmSize": "[parameters('vmSku')]"
                 },
                 "storageProfile": {
-                    "imageReference": {
-                        "id": "[variables('imageRID')]"
-                    },
+                    "imageReference": "[variables('imageReference')]",
                     "osDisk": {
                         "osType": "Linux",
                         "createOption": "FromImage"

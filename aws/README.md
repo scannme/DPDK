@@ -1,4 +1,4 @@
-# FortiWeb HA - AWS - Cloud Formation
+# FortiWeb HA - AWS
 
 This folder contains a set of resources to deploy FortiWeb HA for AWS using CloudFormation Templates.
 

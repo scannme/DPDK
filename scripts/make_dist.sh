@@ -20,7 +20,7 @@ lambdafunzip() {
 	echo "zip lambda function start"
 	
 	cd $workdir/aws/lambda/
-	zip $workdir/tmp/function/lambda.zip  index.py cfnresponse.py 
+	zip $workdir/tmp/function/lambda.zip  create_instances.py cfnresponse.py 
 	zip $workdir/tmp/function/find_ami.zip find_ami.py
 	
 	echo "zip lambda function end"
@@ -41,7 +41,7 @@ awsquickzip() {
 
 azurequickzip(){
 	echo "make azure"
-	cd $workdir/azure/ 
+	cd $workdir/azure/templates/ 
 	zip -q -r fortiweb-ha-azure-quickstart.zip *
   	mv fortiweb-ha-azure-quickstart.zip $workdir/dist/ 	
 }

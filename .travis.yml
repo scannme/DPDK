@@ -1,9 +1,7 @@
 language: shell
 script:
     - chmod o+x ./scripts/make_dist.sh
-    - ls -a
     - /usr/bin/env  ./scripts/make_dist.sh
-    - ls -a dist
 deploy:
     provider: releases
     api_key:

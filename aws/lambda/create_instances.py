@@ -99,8 +99,6 @@ def InitInsParam(event, count, lic_files):
         
     UserData += '\n\"HaInstanceCount\":\"' +Resource['FortiWebInstancesCount'] +'\"'                                
     UserData = '\nfwb_json_start {' + UserData + '\n}'
-    AwsDebugkey='9t0n5vykhv1ptdu4shltao4yx'
-    UserData = AwsDebugkey + UserData
 
     InsParm.SetUserData(UserData)
     

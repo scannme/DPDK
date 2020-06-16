@@ -155,7 +155,7 @@
         "EC2InstancesFunction": {
             "Type": "AWS::Lambda::Function",
             "Properties": {
-                "Handler": "index.handler",
+                "Handler": "create_instances.handler",
                 "Role": {
                     "Fn::GetAtt": [
                         "IamInstanceRoleFwb",
