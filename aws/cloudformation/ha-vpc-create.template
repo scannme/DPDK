@@ -107,7 +107,7 @@
                             "Ref":"CustomIdentifier"
                         }
                     }
-                ]                
+                ]
             }
         },
         "FwbDhcpOptions": {
@@ -124,7 +124,7 @@
                             "Ref":"CustomIdentifier"
                         }
                     }
-                ] 
+                ]
             }
         },
         "FwbDhcpOptionsAssoc": {
@@ -175,7 +175,7 @@
                             "Ref":"CustomIdentifier"
                         }
                     }
-                ]   
+                ]
             }
         },
         "FwbPublicSubnetAclEntry1": {
@@ -308,7 +308,7 @@
                     "Label": {
                         "default": "Common configuration"
                     },
-                    "Parameters": [                   
+                    "Parameters": [
 			 "CustomIdentifier"
                     ]
                 },

@@ -128,7 +128,7 @@
                     "Fn::Sub":[
                         "arn:${Partition}:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
                         "Partition":{ "Ref":"AWS::Partition"}
-                    ]                    
+                    ]
                 ],
                 "Path": "/",
                 "Policies": [
